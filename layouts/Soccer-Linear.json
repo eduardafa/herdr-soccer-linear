@@ -1,0 +1,186 @@
+{
+  "id": "soccer-root",
+  "type": "column",
+  "titlebar": "none",
+  "traffic_lights": [
+    16,
+    10
+  ],
+  "theme": "soccer-day",
+  "preview": "layouts/Soccer-Linear.svg",
+  "font_size": 13,
+  "ui_font": "Geist",
+  "background": "canvas",
+  "terminal_padding": [
+    8,
+    10
+  ],
+  "children": [
+    {
+      "id": "soccer-pitch",
+      "type": "block",
+      "size": {
+        "px": 230
+      },
+      "min": 38,
+      "max": 420,
+      "window_drag": true,
+      "content": {
+        "mod": "soccer"
+      }
+    },
+    {
+      "id": "soccer-scoreboard",
+      "type": "block",
+      "size": {
+        "px": 38
+      },
+      "resizable": false,
+      "content": {
+        "mod": "soccer",
+        "props": {
+          "role": "scoreboard"
+        }
+      }
+    },
+    {
+      "id": "soccer-play",
+      "type": "row",
+      "divider": {
+        "width": 1,
+        "color": "border"
+      },
+      "children": [
+        {
+          "id": "sidebar",
+          "type": "column",
+          "size": {
+            "px": 240
+          },
+          "min": 40,
+          "max": 420,
+          "divider": {
+            "width": 1,
+            "color": "border"
+          },
+          "children": [
+            {
+              "id": "soccer-agent-groups",
+              "type": "block",
+              "size": {
+                "weight": 1
+              },
+              "min": 120,
+              "content": {
+                "mod": "soccer-spaces",
+                "props": {
+                  "role": "agents"
+                }
+              }
+            },
+            {
+              "id": "soccer-spaces",
+              "type": "block",
+              "size": {
+                "weight": 1
+              },
+              "min": 31,
+              "content": {
+                "mod": "soccer-spaces"
+              }
+            },
+            {
+              "id": "soccer-you",
+              "type": "block",
+              "size": {
+                "px": 44
+              },
+              "min": 44,
+              "max": 44,
+              "content": {
+                "mod": "soccer-spaces",
+                "props": {
+                  "role": "you"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "soccer-work",
+          "type": "column",
+          "children": [
+            {
+              "id": "soccer-tabs",
+              "type": "block",
+              "size": {
+                "px": 30
+              },
+              "content": {
+                "mod": "tabs"
+              }
+            },
+            {
+              "id": "soccer-main",
+              "type": "block",
+              "padding": [
+                8,
+                8
+              ],
+              "background": "canvas",
+              "content": {
+                "tab": "active",
+                "pane": {
+                  "gap": 8,
+                  "radius": 6,
+                  "lone": true,
+                  "background": "background",
+                  "border": {
+                    "width": 2,
+                    "color": "border"
+                  },
+                  "focus": {
+                    "width": 2,
+                    "color": "accent"
+                  },
+                  "header": {
+                    "content": {
+                      "mod": "soccer",
+                      "props": {
+                        "role": "pane"
+                      }
+                    },
+                    "height": 26,
+                    "position": "top",
+                    "reveal": "always"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "soccer-linear",
+          "type": "column",
+          "size": {
+            "px": 300
+          },
+          "min": 36,
+          "max": 520,
+          "children": [
+            {
+              "id": "soccer-linear-panel",
+              "type": "block",
+              "content": {
+                "mod": "linear-court",
+                "props": {
+                  "sport": "soccer"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
