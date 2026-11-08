@@ -44,6 +44,7 @@ To start agents on issues from a fresh worktree, list your repos in `~/.config/h
 - Pick a pitch with the Day, Night and Rain buttons on the scoreboard. Auto picks Day from 7:00 to 18:00 and Night otherwise.
 - Each player wears its space's color, with its number on the shirt.
 - Click a player, or an agent in the left panel, to jump to that agent. Hover over a player to see its model, program, what it's doing, its branch and when it started.
+- Right-click a player, or an agent in the left panel, for its menu: go to it, peek at it, rename it, pin it to the top, split a shell beside it, or close it. A renamed agent shows its new name everywhere; renaming it to nothing goes back to its space's name.
 - The scoreboard shows HOME (agents that finished today) against AWAY (times an agent stopped to wait for you today), and a clock in minutes since your first agent started today.
 - The left panel groups your agents into Attack (working), VAR (needs you), Warm-up and Goal (finished). Attack and VAR agents show how long they've been in that status. If an agent waits for you for 10 minutes, Herdr posts a reminder.
 - Your name and a settings button sit under the Spaces list.
