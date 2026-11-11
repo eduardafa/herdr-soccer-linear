@@ -49,7 +49,7 @@ To start agents on issues from a fresh worktree, list your repos in `~/.config/h
 - The left panel groups your agents into Attack (working), VAR (needs you), Warm-up and Goal (finished). Attack and VAR agents show how long they've been in that status. If an agent waits for you for 10 minutes, Herdr posts a reminder.
 - Your name and a settings button sit under the Spaces list.
 - Click a section header, the Spaces header or a repo's arrow to fold it. The arrow at the pitch's top right folds the pitch to a bar.
-- "Team sheet" groups your issues by status or by project. Sub-issues fold under their parent; click "N sub-issues" to show them.
+- "Team sheet" groups your issues by status or by project. By project, sub-issues fold under their parent (click "N sub-issues" to show them); by status, each issue stays under its own status and shows its parent's ID.
 - In "Team sheet", click an issue to open it in Linear, or right-click it to kick it off, change its status, priority or title, comment, or see its parent and sub-issues. Copy branch copies its Linear branch name. The arrow in the header folds the panel.
 
 What each part does is in [RECIPE.md](RECIPE.md).
